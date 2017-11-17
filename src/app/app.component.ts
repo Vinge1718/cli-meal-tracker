@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Meal } from './meal';
 
 @Component({
@@ -14,4 +14,13 @@ export class AppComponent {
     new Meal("Lunch.", 900, "pilau and two drum-sticks"),
     new Meal("Dinner.", 1200, "Ugali, Mursik and Bacon")
   ];
+
+  selectedMeal: Meal = null;
+  showDetails(clickedMeal: Meal){
+    this.selectedMeal = clickedMeal;
+  }
+
+  saveChanges(){
+    this.selectedMeal = null;
+  }
 }
