@@ -9,5 +9,12 @@
   <p>Name of your meal: {{currentMeal.name}}</p>
   <p>Calorie Count: kcal.{{currentMeal.calories}}</p>
   <p>Meal Description: {{currentMeal.description}}</p>
-  <button (click)="editThisMeal(currentMeal)">Edit</button>
+  <button (click)="showDetails(currentMeal)">Edit</button>
+</div>
+<div *ngIf="selectedMeal">
+  <h4>Change the meal details</h4>
+  <p>Enter Meals Name: <input [(ngModel)]="selectedMeal.name"></p>
+  <p>Fill in Calories:  kcal.<input [(ngModel)]="selectedMeal.calories"></p>
+  <p>Enter Description: <input [(ngModel)]="selectedMeal.description"></p>
+  <button (click)="saveChanges()">Save Changes</button>
 </div>
