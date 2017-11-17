@@ -20,7 +20,7 @@ export class AppComponent {
     this.selectedMeal = clickedMeal;
   }
 
-  saveChanges(){
+  finishedEditting(){
     this.selectedMeal = null;
   }
 }

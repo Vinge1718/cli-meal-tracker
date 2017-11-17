@@ -1,0 +1,7 @@
+<div *ngIf="childSelectedMeal">
+  <h4>Change the meal details</h4>
+  <p>Enter Meals Name: <input [(ngModel)]="childSelectedMeal.name"></p>
+  <p>Fill in Calories:  kcal.<input [(ngModel)]="childSelectedMeal.calories"></p>
+  <p>Enter Description: <input [(ngModel)]="childSelectedMeal.description"></p>
+  <button (click)="doneClicked()">Save Changes</button>
+</div>

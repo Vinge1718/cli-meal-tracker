@@ -8,11 +8,7 @@
   [childMealList]="masterTaskList"
   (clickSender)="showDetails($event)"
 ></app-meal-list>
-
-<div *ngIf="selectedMeal">
-  <h4>Change the meal details</h4>
-  <p>Enter Meals Name: <input [(ngModel)]="selectedMeal.name"></p>
-  <p>Fill in Calories:  kcal.<input [(ngModel)]="selectedMeal.calories"></p>
-  <p>Enter Description: <input [(ngModel)]="selectedMeal.description"></p>
-  <button (click)="saveChanges()">Save Changes</button>
-</div>
+<app-edit-meal
+  [childSelectedMeal]="selectedMeal"
+  (doneClickedSender)="finishedEditting()"
+></app-edit-meal>
