@@ -4,13 +4,11 @@
     {{title}}!
   </h1>
 </div>
-<div *ngFor="let currentMeal of meals">
-  <h4>Each Meal Details</h4>
-  <p>Name of your meal: {{currentMeal.name}}</p>
-  <p>Calorie Count: kcal.{{currentMeal.calories}}</p>
-  <p>Meal Description: {{currentMeal.description}}</p>
-  <button (click)="showDetails(currentMeal)">Edit</button>
-</div>
+<app-meal-list
+  [childMealList]="masterTaskList"
+  (clickSender)="showDetails($event)"
+></app-meal-list>
+
 <div *ngIf="selectedMeal">
   <h4>Change the meal details</h4>
   <p>Enter Meals Name: <input [(ngModel)]="selectedMeal.name"></p>
