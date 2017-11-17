@@ -5,10 +5,13 @@
   </h1>
 </div>
 <app-meal-list
-  [childMealList]="masterTaskList"
+  [childMealList]="masterMealList"
   (clickSender)="showDetails($event)"
 ></app-meal-list>
 <app-edit-meal
   [childSelectedMeal]="selectedMeal"
   (doneClickedSender)="finishedEditting()"
 ></app-edit-meal>
+<app-new-meal
+  (newMealSender)="addMeal($event)"
+></app-new-meal>
