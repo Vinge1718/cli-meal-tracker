@@ -12,6 +12,8 @@ export class MealListComponent implements OnInit {
   editButtonHasBeenClicked(mealToEdit: Meal){
     this.clickSender.emit(mealToEdit);
   }
+
+  public caloryCount: string = "all";
   constructor() { }
 
   ngOnInit() {

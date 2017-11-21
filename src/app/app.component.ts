@@ -9,7 +9,10 @@ import { Meal } from './meal';
 export class AppComponent {
   title = 'Meal Tracker';
 
-  public masterMealList: Meal[] = [];
+  public masterMealList: Meal[] = [
+    new Meal("breakfast", 440, "cereals, nuts and yoghurt"),
+    new Meal("lunch", 800, "potato chips, soda and paastries")
+  ];
 
   selectedMeal: Meal = null;
   showDetails(clickedMeal: Meal){

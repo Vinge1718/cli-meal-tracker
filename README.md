@@ -1,4 +1,8 @@
 # CliMealTracker
+ This is a web application designed to keep track of ones meals through out the day.
+
+## Contributors
+- Vinge1718
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
