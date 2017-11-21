@@ -13,7 +13,12 @@ export class MealListComponent implements OnInit {
     this.clickSender.emit(mealToEdit);
   }
 
-  public caloryCount: string = "all";
+  public caloriesCount: string = "all";
+
+  onChange(optionFromMenu){
+    this.caloriesCount = optionFromMenu;
+    console.log(this.caloriesCount);
+  }
   constructor() { }
 
   ngOnInit() {

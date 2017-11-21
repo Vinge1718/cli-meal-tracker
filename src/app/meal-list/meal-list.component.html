@@ -1,10 +1,10 @@
 <select (change)="onChange($event.target.value)">
   <option value="all" selected="selected">All meals</option>
-  <option value="High Calorie Food">High Cal</option>
-  <option value="Low Calorie Food">Low Cal</option>
+  <option value="High Calories">High Cal</option>
+  <option value="Low Calory">Low Cal</option>
 </select>
 
-<div *ngFor="let currentMeal of childMealList | calorieCount">
+<div *ngFor="let currentMeal of childMealList | calorieCount:caloriesCount">
   <h4>Each Meal Details</h4>
   <p>Name of your meal: {{currentMeal.name}}</p>
   <p>Calorie Count: kcal.{{currentMeal.calories}}</p>
