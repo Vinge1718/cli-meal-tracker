@@ -8,6 +8,7 @@ import { MealListComponent } from './meal-list/meal-list.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { NewMealComponent } from './new-meal/new-meal.component';
 import { CalorieCountPipe } from './calorie-count.pipe';
+import { MealComponent } from './meal/meal.component';
 
 
 
@@ -17,7 +18,8 @@ import { CalorieCountPipe } from './calorie-count.pipe';
     MealListComponent,
     EditMealComponent,
     NewMealComponent,
-    CalorieCountPipe
+    CalorieCountPipe,
+    MealComponent
   ],
   imports: [
     BrowserModule,
