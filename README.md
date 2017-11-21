@@ -1,5 +1,8 @@
 # CliMealTracker
- This is a web application designed to keep track of ones meals through out the day.
+
+## Description
+ This is a web application designed to keep track of ones meals through out the day. Among the functionalities, it should:
+ - Be able to display meals with high calorific value (above 500) and those below that separately.
 
 ## Contributors
 - Vinge1718
