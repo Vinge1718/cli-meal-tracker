@@ -15,8 +15,21 @@ export class AppComponent {
   ];
 
   selectedMeal: Meal = null;
+
   showDetails(clickedMeal: Meal){
     this.selectedMeal = clickedMeal;
+  }
+
+  delete(itemToDelete: Meal){
+    /*
+    var delMeal = itemToDelete;
+    var masterMealList = this.masterMealList;
+    masterMealList=masterMealList.filter(function(item) {
+    return item !== delMeal;
+  }) */
+
+    var delMeal: number = this.masterMealList.indexOf(itemToDelete);
+    this.masterMealList.splice(delMeal, 1)
   }
 
   finishedEditting(){
