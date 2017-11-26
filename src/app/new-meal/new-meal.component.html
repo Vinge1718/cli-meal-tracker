@@ -2,7 +2,13 @@
 <p>Enter Meals Name: <input #newName></p>
 <p>Fill in Calories:  kcal.<input type="number" #newCalories></p>
 <p>Enter Description: <input #newDescription></p>
-<button (click)="
+<button
+style=" background-color: white;
+  color: black;
+  border: 2px solid green;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 7px;"
+(click)="
   addClicked(newName.value, newCalories.value, newDescription.value);
   newName.value='';
   newCalories.value='';
