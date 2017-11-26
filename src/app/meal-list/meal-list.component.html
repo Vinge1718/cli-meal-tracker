@@ -9,6 +9,17 @@
   <p>Name of your meal: {{currentMeal.name}}</p>
   <p>Calorie Count: kcal.{{currentMeal.calories}}</p>
   <p>Meal Description: {{currentMeal.description}}</p>
-  <button (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
-  <button (click)="deleteMealItem(currentMeal)">Delete</button>
+  <button style=" background-color: white;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 7px;"
+    (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
+  <button
+  style=" background-color: white;
+    color: black;
+    border: 2px solid red;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 7px;"
+  (click)="deleteMealItem(currentMeal)">Delete</button>
 </div>
