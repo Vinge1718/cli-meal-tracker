@@ -9,8 +9,14 @@ import { Meal } from '../meal';
 export class MealListComponent implements OnInit {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
+
   editButtonHasBeenClicked(mealToEdit: Meal){
     this.clickSender.emit(mealToEdit);
+  }
+
+  @Output() deleteMeal = new EventEmitter();
+  deleteMealItem(mealToDelete: Meal){
+    this.deleteMeal.emit(mealToDelete);
   }
 
   public caloriesCount: string = "all";
